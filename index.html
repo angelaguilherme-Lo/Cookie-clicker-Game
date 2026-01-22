@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cookie Clicker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="presentation">
+  <header class="presenter-header">
+    <h1>🍪 Cookie Clicker</h1>
+  </header>
+
+  <div class="game">
+    <p class="subtitle">Build your cookie production empire</p>
+    <p class="subtitle">Click. Upgrade. Repeat.</p>
+
+    <div class="cookie-area">
+      <button id="cookie-btn" class="cookie-btn">🍪</button>
+      <div id="floating-text"></div>
+    </div>
+
+    <div class="stats">
+      <p>Cookies: <span id="cookie-count">0</span></p>
+      <p>Ovens: <span id="oven-count">0</span></p>
+      <p>Mixers: <span id="mixer-count">0</span></p>
+      <p>Factories: <span id="factory-count">0</span></p>
+    </div>
+
+    <div class="upgrade">
+      <h2>🔥 Oven</h2>
+      <p>+1 cookie per click</p>
+      <button id="buy-oven-btn">Buy (10 🍪)</button>
+    </div>
+
+    <div class="upgrade">
+      <h2>🧁 Mixer</h2>
+      <p>+5 cookies per click</p>
+      <button id="buy-mixer-btn">Buy (50 🍪)</button>
+    </div>
+
+    <div class="upgrade">
+      <h2>🏭 Factory</h2>
+      <p>+20 cookies per click</p>
+      <button id="buy-factory-btn">Buy (200 🍪)</button>
+    </div>
+
+    <p class="save-note">Progress saves automatically</p>
+  </div>
+
+  <div class="notes">
+    <h2>How the game works</h2>
+    <ol>
+      <li>Clicking increases cookies</li>
+      <li>Upgrades increase cookies per click</li>
+      <li>Buttons disable when unaffordable</li>
+      <li>Progress is saved with localStorage</li>
+    </ol>
+  </div>
+
+  <div class="demo-controls">
+    <button id="fill-btn">⚡ Add 100 Cookies</button>
+    <button id="reset-btn">🔄 Reset Demo</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
